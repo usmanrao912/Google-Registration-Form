@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Google Form</title>
+	
+		
+	<style type="text/css">
+		.main-2{
+			display: flex;
+			justify-content: space-between;
+		}
+		.button{
+			margin-top:5px ;
+		}
+		.main
+		{
+		 padding: 20px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			align-content: center;
+		 
+			border: 1px solid gray;
+			border-radius: 10px;
+
+			display: flex;
+			justify-content: space-between;
+		}	
+		.text
+		{
+			width: 60%;
+		}
+		.image
+		{
+			margin-top: 30px;
+			margin-left: 50px;
+			width: 40%;
+			float: left;
+		}
+
+		/* Resposive */
+		@media (max-width :500px){
+			.text
+			{
+				width: 100%;
+			}
+
+			.image
+			{
+				display: none;
+			}
+			.fname
+			{
+				width: 100% !important;
+				margin-bottom: 10px;
+			}
+			.lname{
+				margin-left: 0px !important;
+				width: 100% !important;
+			}
+			.username
+			{
+				
+				margin-top: -10px;
+				width: 100% !important;
+			}
+			.password{
+                width: 100% !important;
+				margin-bottom: 10px;
+            }
+			.confirm
+			{
+				width: 100% !important;
+				margin-bottom: 3px;
+				margin-left: 0px !important;
+			}
+			.paragraph-button p
+			{
+				font-size: 16px !important;
+				
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="main">
+	
+		<div class="text">
+		
+			<h1>
+				<span style="color: blue;">G</span>
+				<span style="color: red;">o</span>
+				<span style="color: orange;">o</span>
+				<span style="color: blue;">g</span>
+				<span style="color: green;">l</span>
+				<span style="color: red;">e</span>
+			</h1>
+			<p>Create Your Google Account</p>
+			<form>
+				<!-- <div class="fname"> -->
+					
+					<input class="fname" style="padding: 5px; width: 160px; border-radius: 4px;" type="text" id="fname" name="" placeholder="First Name">				
+				<!-- </div> -->
+					
+					<input class="lname" style="padding: 5px; width: 160px; margin-left: 18px; border-radius: 4px;" type="text" id="lname" name="Last name" placeholder="Last Name">
+					
+					<br><br>
+					<input class="username" style="padding: 4px;  border-radius: 4px; width: 358px; " type="mail" name="" placeholder="Username"><br>
+				<p>you can use letters, numbers & periods</p>
+
+					<!-- <span style="height: 5px;">you can use letters, numbers & periods</span> -->
+				
+				<span style="color: blue;>">Use my current email address instead</span>
+				<br><br>
+				<input class="password" style="padding: 5px; width: 140px; border-radius: 4px;" type="password" name="" placeholder="Password">
+				<input class="confirm" style="padding: 5px; width: 140px; margin-left: 20px; border-radius: 4px;""; type="password" name="" placeholder="Confirm">
+		
+				<div class="char">
+					<p style="font-size: 16px;">Use 8 or more characters with a mix of letters, numbers & symbols</p>
+				</div>
+			</form>
+		
+				<div class="main-2">
+  					<div class="paragraph-button">
+						<p style="font-size: 17px;">
+							<a href="">Sign in instead</a></p> 
+					</div>
+				
+				<div class="button">
+					<button style="color: white; display: inline; background-color: rgb(50,80,150); width: 75px; height: 33px; margin-left: 100px; margin-top: 7px; border-radius: 5px; " >Next</button>	
+				</div>
+		</div>
+		
+			</div>
+
+			<div class="image">
+					<img src="./Screenshot (37).png">				
+			</div>
+
+	</div>
+</body>
+</html>
